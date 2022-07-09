@@ -1,0 +1,71 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+@font-face {
+    font-family: Cyberway-riders;
+    src: url(../../../res/CyberwayRiders-lg97d.ttf);
+}
+
+body {
+    background-color: #080808;
+}
+
+.cyberway-rider {
+    font-family: Cyberway-riders;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+}
+
+.cyberway-rider span {
+    font-family: Cyberway-riders;
+    color: #f3382f;
+    font-weight: 500;
+}
+
+nav .logo {
+    font-size: 2vw;
+    margin: 2%;
+}
+
+.main-content {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.heading {
+    text-align: center;
+}
+
+.sub-heading {
+    font-size: 2vw;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 200;
+}
+
+.data {
+    text-align: justify;
+}
+
+@media (max-width: 1000px) {
+    .main-content {
+        width: 80%;
+    }
+}
+
+@media (max-width: 500px) {
+    .main-content {
+        width: 90%;
+    }
+    
+    .heading {
+        font-size: 5vw;
+    }
+}

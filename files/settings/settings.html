@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codeholics | Settings</title>
+    <!-- Font Awesome icons -->
+    <script src="https://kit.fontawesome.com/6d232ec003.js" crossorigin="anonymous"></script>
+    <!-- Style sheet link -->
+    <link rel="stylesheet" href="./settings.css">
+    <!-- Google Fonts - Josefin Sans -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="leftbox">
+            <nav>
+                <a onclick = "tabs(0)" class = "tab">
+                    <i class="fa-solid fa-user"></i>
+                </a>
+                <a onclick = "tabs(2)" class = "tab">
+                    <i class="fa-solid fa-tv"></i>
+                </a>
+                <a onclick = "tabs(3)" class = "tab">
+                    <i class="fa-solid fa-tasks"></i>
+                </a>
+                <a onclick = "tabs(4)" class = "tab">
+                    <i class="fa-solid fa-key"></i>
+                </a>
+                <a onclick = "tabs(4)" class = "tab">
+                    <i class="fa-solid fa-cog"></i>
+                </a>
+            </nav>
+        </div>
+        <div class="rightbox">
+            <div class="profile tabShow">
+                <h1>Personal Details</h1>
+                <p>Codeholics Username</p>
+                <input type="text" name="username" id="username" placeholder="HardikShah563">
+                <p>Email Address</p>
+                <input type="email" name="email" id="email" placeholder="example@domain.com">
+                <p>Change City</p>
+                <input type="text" name="name" id="name" placeholder="Hardik Shah">
+                <p>Coding Experience</p>
+                <div class="radio">
+                    <div class="noob experience-button">
+                        <a href="#">Noob</a>
+                    </div>
+                    <div class="intermediate experience-button">
+                        <a href="#">Intermediate</a>
+                    </div>
+                    <div class="expert experience-button">
+                        <a href="#">Expert</a>
+                    </div>
+                    <div class="elite experience-button">
+                        <a href="#">Elite</a>
+                    </div>
+                </div>
+                <button type="submit">Update</button>
+            </div>
+
+            <!-- Password Reset -->
+            <div class="profile tabShow">
+                <h1>Update Password</h1>
+                <p>Current Password</p>
+                <input type="text" name="password" id="password" placeholder="Pass****">
+                <p>New Password</p>
+                <input type="password" name="new-password" id="new-password">
+                <p>Confirm Password</p>
+                <input type="password" name="new-password" id="new-password">
+                <p>Changing your password will log you out of your active Codeholics sessions except the one you're using at this time. on all the devices you are loged in. </p>
+                <button type="submit">Update</button>
+            </div>
+
+            <!-- Display Settings -->
+            <div class="display tabShow">
+                <h1>Display Settings</h1>
+                <p>Codeholics Username</p>
+                <input type="text" name="username" id="username" placeholder="HardikShah563">
+                <p>Email Address</p>
+                <input type="email" name="email" id="email" placeholder="example@domain.com">
+                <p>Change City</p>
+                <input type="text" name="name" id="name" placeholder="Hardik Shah">
+                <button type="submit">Update</button>
+            </div>
+        </div>
+    </div>
+    <!-- Old settings Page
+    <h1>Settings</h1>
+    <div class="settings">
+        <p>Want to change username?&nbsp;Check availiblity: </p>
+        <input type="text" name="username" id="username" placeholder="xyz@1234">
+        <p>Want to add another email?&nbsp;Enter new email-id: </p>
+        <input type="email" name="email" id="email" placeholder="xyz@gmail.com">
+        <p>Security questions?&nbsp;Update your password: </p>
+        <input type="text" name="password" id="password" placeholder="Make sure it is quite strong">
+        <p>Switch theme: </p>
+        <input type="button" value="Switch to Light Theme" disabled>
+    </div> -->
+</body>
+</html>

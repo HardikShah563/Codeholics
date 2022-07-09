@@ -1,0 +1,328 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+@font-face {
+    font-family: Cyberway-riders;
+    src: url(../res/CyberwayRiders-lg97d.ttf);
+}
+
+body {
+    background-color: #080808;
+}
+
+/* Navigation Bar CSS */
+.navigation {
+    height: 100vh;
+    width: 100%;
+    background-color: #080808;
+    background: url("../res/aesthetic-bg-1.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.cyberway-rider {
+    font-family: Cyberway-riders;
+    font-weight: 500;
+    letter-spacing: 0.2px;
+}
+
+.cyberway-rider span {
+    font-family: Cyberway-riders;
+    color: #f3382f;
+    font-weight: 500;
+}
+
+.dashboard-logo span {
+    font-size: 1vw;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px 2vw;
+    background-color: none;
+}
+
+.logo {
+    color: white;
+    font-size: 45px;
+    font-weight: bold;
+}
+
+nav label {
+    margin: 2vh 2vh;
+    font-size: 56px;
+    text-shadow: 2px 2px 8px #000000;
+    background-color: none;
+    transition-duration: 0.4s;
+}
+
+nav label:hover {
+    transform: scale(1.2);
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 0px 25px;
+    background-color: transparent;
+}
+
+nav ul li a {
+    text-decoration: none;
+    text-shadow: 2px 2px 8px #000000;
+    font-weight: bold;
+    font-size: 2vh;
+    text-transform: capitalize;
+}
+
+nav ul i {
+    color: #f3382f;
+    background-color: transparent;
+}
+
+nav ul :hover {
+    transform: scale(1.2);
+    transition-duration: 0.4s;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+@media (max-width: 1200px) {
+    .checkbtn {
+        display: block;
+    }
+
+    .logo {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 5vw;
+    }
+
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #000000;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all 0.4s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 5vw 0;
+        line-height: 30px;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+    }
+
+    nav ul li :hover {
+        transform: scale(1.2);
+        transition-duration: 0.4s;
+    }
+
+    #check:checked~ul {
+        left: 0;
+    }
+
+    .sections {
+        display: block;
+    }
+}
+
+/* Navigation CSS Conclude*/
+.sections {
+    display: grid;
+    grid-template-columns: repeat(minmax(400px, auto), 2);
+    display: inline-block;
+    margin: 10% 10%;
+    margin-bottom: 5%;
+    text-shadow: 2px 2px 8px #000000;
+}
+
+.section-1 {
+    width: 40vw;
+}
+
+.section-1 h1 {
+    font-size: 6vw;
+}
+
+.section-1 h2 {
+    font-size: 2vw;
+    margin-bottom: 3%;
+}
+
+.section-1 h3 {
+    font-size: 1.2vw;
+    margin: 2%;
+}
+
+.section-2 img {
+    width: 20vw;
+    display: inline-block;
+    /* margin: 20px 20px; */
+    /* float: right; */
+}
+
+.btn {
+    width: 20vw;
+    border: 2px solid #f3382f;
+    border-radius: 8px;
+    background-color: #101010;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 1.5em;
+    padding: 8px 8px;
+    transition: all 0.4s;
+    cursor: pointer;
+    margin: 5vh 0px;
+}
+
+.btn:hover {
+    border-radius: 25px;
+    border: 2px solid #ffffff;
+    background-color: transparent;
+}
+
+.btn span {
+    font-size: 1.5vw;
+    text-shadow: 2px 2px 8px #000000;
+    cursor: pointer;
+    display: block;
+    position: relative;
+    transition: 0.4s;
+}
+
+.btn span a {
+    text-decoration: none;
+}
+
+.btn span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.4s;
+}
+
+.btn:hover span {
+    padding-right: 25px;
+}
+
+.btn:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.sections {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.scroll-down {
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 1vw;
+}
+
+.scroll-down img {
+    width: 20%;
+}
+
+/* pratice problem page */
+.contests {
+    background-color: #101010;
+    padding: 10vw;
+}
+
+.contests h1 {
+    text-align: center;
+    font-size: 4vw;
+    padding: 4vw;
+}
+
+.scroll-down img {
+    opacity: 0.4;
+}
+
+/* Footer CSS */
+
+footer {
+    width: 100%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.india {
+    text-align: center;
+    font-size: 1.5vw;
+    margin-bottom: 40px;
+}
+
+.india i {
+    color: #ff0000;
+}
+
+footer li {
+    list-style-type: none;
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.groupings {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.items {
+    /* margin: 2%; */
+}
+
+@media (max-width: 1000px) {
+    .india {
+        font-size: 2vw;
+    }
+}
+
+@media (max-width: 700px) {
+    .india {
+        font-size: 3vw;
+    }
+}
